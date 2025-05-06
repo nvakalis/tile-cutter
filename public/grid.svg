@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect x="0" y="0" width="64" height="64" rx="8" fill="#e5e7eb" />
+  
+  <!-- 3x3 Grid with different shades of gray -->
+  <!-- Row 1 -->
+  <rect x="4" y="4" width="16" height="16" rx="2" fill="#4b5563" />
+  <rect x="24" y="4" width="16" height="16" rx="2" fill="#9ca3af" />
+  <rect x="44" y="4" width="16" height="16" rx="2" fill="#6b7280" />
+  
+  <!-- Row 2 -->
+  <rect x="4" y="24" width="16" height="16" rx="2" fill="#d1d5db" />
+  <rect x="24" y="24" width="16" height="16" rx="2" fill="#1f2937" />
+  <rect x="44" y="24" width="16" height="16" rx="2" fill="#f3f4f6" />
+  
+  <!-- Row 3 -->
+  <rect x="4" y="44" width="16" height="16" rx="2" fill="#374151" />
+  <rect x="24" y="44" width="16" height="16" rx="2" fill="#e5e7eb" />
+  <rect x="44" y="44" width="16" height="16" rx="2" fill="#111827" />
+</svg>
