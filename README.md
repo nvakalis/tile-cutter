@@ -43,7 +43,7 @@ Tile Cutter is a lightweight tool for slicing images into tiles — perfect for 
 ## Usage
 
 ### 1. Load an Image
-Drag and drop an image onto the designated area.
+Drag and drop an image onto the designated area. For a quick test use the image examples/grid_3x3.png and set the column count to 3 instead of 4.
 
 ### 2. Adjust Slicing Settings
 Use the graphical user interface (GUI) to customize the slicing settings. You can control the number of columns and rows, as well as the gap and padding between tiles. Experiment with "free" and "uniform" space modes to achieve the desired tile arrangement.
