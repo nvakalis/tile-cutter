@@ -1,7 +1,7 @@
 {
   "name": "tile-cutter",
   "version": "0.0.1",
-  "description": "A tool to cut images into tiles and create a zip file with the tiles.",
+  "description": "A tool to cut images into tiles in the browser.",
   "keywords": [ "image", "tile", "cutter" ],
   "author": "Nikos Vakalis <nvakalis@gmail.com>",
   "license": "MIT",
