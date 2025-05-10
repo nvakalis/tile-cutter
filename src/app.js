@@ -8,14 +8,17 @@ import { start_view_tiles, redrawCanvas_view_tiles, terminate_view_tiles } from 
 import { start_view_stack, redrawCanvas_view_stack, terminate_view_stack } from './view/view_stack.js';
 import { calcCellSize } from './calcCellSize.js';
 import { exportImageSlicesToZip } from './zip.js'
+import { setupExampleTrigger } from './example-trigger.js';
 
 function bootApp() {
     document.body.innerHTML = h_main_page();
 
-    message("Drop your grid image here to slice it into tiles");
+    showWelcomeMessage();
 
     setupImageDrop(app.startLoading);
-
+    setupExampleTrigger(() => {
+        app.startLoading('./grid_3x3.png');
+    });
     return;
 
     if (testing) {
@@ -47,8 +50,21 @@ const testImageUrl = 'img/grid_3x3.png';
 
 window.app = app;
 
-function message(msg) {
-    html('content', `<h1 class="message">${msg}</h1>`);
+function showWelcomeMessage() {
+    var msg_header = `Welcome to the Tile Cutter App!`;
+    var msg_title = `Drop your grid image here to slice it into tiles`
+    var msg_subTitle = `For a quick test, press the E key on your keyboard to load an example image of a 3×3 grid.`;
+
+    html('content', `
+        <div class="entry-message">
+            <h1 class="entry-header">Welcome to the <span class="accent">Tile Cutter App!</span></h1>
+            <h2 class="entry-title">Drop your grid image here to slice it into tiles</h2>
+            <p class="entry-subtitle">
+            For a quick test, press <kbd class="key-hint">E</kbd> on your keyboard to load an example image of a 3×3 grid.
+            </p>
+        </div>
+
+`);
 }
 
 app.startLoading = function (url) {
